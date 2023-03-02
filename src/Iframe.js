@@ -8,7 +8,7 @@ function Iframe(props) {
     iframe.src = props.src;
     iframe.style.width = props.width || '100%';
     iframe.style.height = props.height || '100%';
-    iframe.style.border = 'none';
+    iframe.style.border =  props.border || 'none';
 
     iframeRef.current.appendChild(iframe);
 
